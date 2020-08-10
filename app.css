@@ -1,0 +1,41 @@
+h1{
+    color: brown;
+    font-weight: 700;
+    font-size: 5em;
+    
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+#content{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0px 4px 3px black,
+                 0px 8px 13px white;
+
+}
+body{
+    background: url(https://images.unsplash.com/photo-1558191053-8edcb01e1da3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    color:black ;
+    text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.336);
+}
+hr{
+    width: 700px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.navbar {
+    background-color:rgba(228, 216, 216, 0.781);
+    border: none;
+    color: black;
+}
+.nav{
+    padding-right: 15px;
+    font-size: large;
+}
