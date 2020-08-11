@@ -16,10 +16,11 @@ html{
 
 }
 body{
-    background: url(https://images.unsplash.com/photo-1558191053-8edcb01e1da3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background: url(img/img1.jpg);
     background-size: cover;
     background-position: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: slide 10s infinite;
 }
 h3{
     color:black ;
@@ -38,4 +39,22 @@ hr{
 .nav{
     padding-right: 15px;
     font-size: large;
+}
+button{
+    border-radius: 15px;
+    border: none;
+
+}
+@keyframes slide{
+    0%{
+        background-image: url(img/img1.jpg);
+    }
+    33%{
+        background-image: url(img/img2.jpg);
+    }
+    67%{
+        background-image: url(img/img3.jpg);
+    }
+    100%{
+        background-image: url(img/img4.jpg)}
 }
