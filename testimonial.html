@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+           
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           
+            background:url(../Fashion_store-1/img/testimonials-background.png);
+           
+
+        }
+      
+        .navbar {
+            background-color:rgba(243, 239, 239, 0.781);
+            border: none;
+            width: 100%;
+            
+        }
+        .nav{
+         
+            font-size: large;
+        }
+       
+  
+        .container1{
+            width: 900px;
+            margin: 0 auto;
+            display: grid;
+            margin-top: 80px;
+            font-family: cursive;
+            grid-gap: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        
+        .container1 .box{
+            position: relative;
+            padding: 80px 40px 40px;
+            transition: 0.5s;
+            text-align: center;
+            border-radius: 200px 0 200px 0;
+            background:#ff9e44;
+            opacity: 0.7;
+            margin-bottom: 90px;
+            font-weight: bold;
+            font-size: 20px;
+           
+        }
+        .container1 .box:hover{
+            background: #ff0057;
+        }
+        .container1 .box p{
+            margin: 0;
+            padding: 0;
+            transition: 0.5s;
+        }
+        .container1 .box h4{
+            margin: 20px 0 0;
+            padding: 0;
+            transition: 0.5s;
+            color: #ff0057;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+        .container1 .box h4 span{
+            font-weight: 600;
+            font-size: 14px;
+            color: #a39f9f;
+            transition: 0.5s;
+        }
+        .container1 .box:hover p,  
+        .container1 .box:hover h4, 
+         .container1 .box:hover h4 span{
+            color: #fff;
+        }
+        .container1 .box .imgbox{
+            position: absolute;
+            width: 200px;
+            left: 50%;
+            transform: translate(-50%);
+            height: 150px;
+            border-radius: 50%;
+            top: -80px;
+           
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+           
+        }
+       
+        .container1 .box::before{
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            content: '';
+            width: 100px;
+            height: 80px;
+            background: url(https://i.dlpng.com/static/png/5520547-png-file-svg-icon-quote-free-png-images-clipart-download-quote-pngm-920_697_preview.png);
+            background-size:cover ;
+            opacity: 0.05;
+           
+            pointer-events:none ;
+            transition: 0.5s;
+        }
+        .container1 .box:hover::before{
+            opacity: 1;
+            transform: translateY(-60px);
+        }
+        .container1 .box:after{
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            content: '';
+            width: 100px;
+            height: 80px;
+            background: url(https://i.dlpng.com/static/png/5520547-png-file-svg-icon-quote-free-png-images-clipart-download-quote-pngm-920_697_preview.png);
+            background-size:cover ;
+            background-position: center;
+            opacity: 0.05;
+            pointer-events:none ;
+            transition: 0.5s;
+            transform: rotate(180deg) translateY(0px);
+        }
+        .container1 .box:hover:after{
+            opacity: 1;
+            transform: rotate(180deg)  translateY(-60px);
+        }
+      
+        .jumbotron{
+           
+            background-image: url(https://images.unsplash.com/photo-1592500305689-d435652c10aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-left: 40px;
+            margin-right: 20px;
+            height: 400px;
+            margin-bottom: 100px;
+            border-radius: 50px;
+        }
+        
+       
+        .container1{
+            width: 900px;
+            margin: 0 auto;
+            display: grid;
+            margin-top: 60px;
+            font-family: cursive;
+            grid-gap: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        
+        
+        .footer{
+                background-color:rgb(51, 49, 49);
+                height: 60px;
+                text-align: center;
+                padding-top: 15px;
+                color:white;
+                width: 100%;
+            }
+            .container3{
+                background-color:rgb(95, 95, 95);
+                color: white;
+            }
+            h6{
+                font-size: 20px;
+                color: black;
+            }
+            a{
+                text-align: center;
+            }
+            .container3 a{
+                color:white;
+            }
+        @media(max-width: 1000px){
+            .container1 .box{
+                margin-top: 80px;
+                width: 700px;
+           
+               
+               
+            }
+           
+         
+       
+       
+        }
+     
+            
+       
+          
+      
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+               
+              
+              <a href="#" class="navbar-brand"><img src="img/logo.jpeg" style=" background-size: cover;height: 30px; background: transparent;padding-top: 0px; width:300px;"></a>
+              
+          </div>
+         
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="landing page.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                  <li><a href="image gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a></li>
+                  <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Testimonials</a></li>
+                 
+                  <li><a href="about us.html"><i class="fa fa-bars" aria-hidden="true"></i> About</a></li>
+                  <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i> Contact </a></li>
+              </ul>
+             
+          
+      </div>
+  </div>
+  
+    <div class="jumbotron"></div>
+   
+      
+    <div class="container1">
+        <div class="box">
+        <div class="imgbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGBD3K5KxEeY0eyEMJK3OcpXbt6oFV-iCh0Q&usqp=CAU">
+
+        </div>
+        <p>I'm going to be wearing the Stryker hat because I'm a walking testimonial to the fact that you can get your knee replaced and still play at a really high level and get your life back. 
+           </p>
+        <h4>“Nice experience”<br><span>Fred Funk</span></h4>
+    </div>
+    <div class="box">
+        <div class="imgbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxaVcSOf6iEiObCK8jDU4i5qTsK9qfwd_iMQ&usqp=CAU" >
+
+        </div>
+        <p>I was a nice experience of being a customer, good delivery packing and all.It contains all type of clothing gadgets. So good place to buy such things.</p>
+        <h4>“Awesome place for family”<br><span>Gaurav</span></h4>
+    </div>
+    <div class="box">
+        <div class="imgbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTRGYeObL6cqaWvs12qcz22aHPSR7mIXHpofg&usqp=CAU">
+
+        </div>
+        <p>Most genuine merchant on this platform. Never missed any cashback from them.</p>
+        <h4>	
+            “Perfect! ”<br><span>majhisunilk</span></h4>
+    </div>
+    <div class="box">
+        <div class="imgbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWFmGgIWn1lPQD7KCbDGHG255p1wnkLrh3Fw&usqp=CAU">
+
+        </div>
+        <p>Although it's a bit difficult to reach here, everything was amazing at this place, nice location, great hospitality by the hosts Sumeeth and his wife.
+            We got amazing homely Kerala style food for breakfast and dinner, Thank you both, we will surely visit again for a longer duration stay</p>
+        <h4>	
+            “We had a great stay”<br><span>Ellen</span></h4>
+    </div>
+    <div class="box">
+        <div class="imgbox">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhGAPzhJ0g54RB8RRMDMvxlD-0v1yOSggYPw&usqp=CAU">
+
+        </div>
+        <p>Nice one........if the skirt t line ll stone work..then it will be fantasick...</p>
+        <h4>	
+            “Very HAPPY Love it”<br><span>Vishwanath</span></h4>
+    </div>
+ 
+    
+</div>
+<footer class="page-footer " id="footer">
+    <!-- Footer Links -->
+    <div class="container3 text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row ">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 column_1">
+            <!-- Content -->
+            <h6 class="text">ONLINE SHOPPING</h6>
+            <hr class="deep-purple " style="width: 150px;" >
+            <p>
+                <a href="#">Men</a><br></p>
+               <p> <a href="#">Women</a><br></p>
+               <p> <a href="#">Kids</a><br></p>
+               <p> <a href="#">Home & Living</a><br></p>
+               <p><a href="#">Essentials</a><br></p>
+               
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto column_2">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Get Started</h6>
+            <hr class="hr " style="width: 100px;">
+            <p>
+            <a href="landing page.html">Home</a>
+            </p>
+            <p>
+            <a href="about us.html">AboutUs</a>
+            </p>
+            <p>
+            <a href="#!">Contact</a>
+            </p>
+            <p>
+            <a href="#!">Gallery</a>
+            </p>
+            <p>
+            <a href="#!">Testimonials</a>
+            </p>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-4 col-xl-7 mx-auto ">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="hr " style="width: 70px;">
+            <!-- Links -->
+            <div class="social-links">    
+                <a href="#"><i class="fa  fa-instagram fa-3x" aria-hidden="true"style="font-weight-bold=40px;"></i> </a>
+                <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i> </a>
+                <a href="#"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+                
+            </div>
+            
+  
+        </div>
+        <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer">© 2020 Copyright:
+        <a href="./index.html"> Fashion Fiesta</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</body>
+</html>
