@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image gallery</title>
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" type="text/css" href="header-footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-color: rgb(202, 201, 201);
         }
-        .container{
-            width: 90%;
+        .containers{
+            margin: auto;
         }
-        .header{
+        .header1{
             margin:3%;
 
         }
         
-        .header h2,p{
+        .header1 h2,p{
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -106,13 +106,8 @@
             height: 100px;
             background-color:#3f3e3ea8 ;
         }
-        #navbar nav{
-            text-align: center;
-            padding: 0;
-            margin: 0;
-            
-          }
-          .container button {
+       
+          .containers button {
             border-radius: 4px;
             background-color:blue;
             opacity:0.5;
@@ -125,18 +120,18 @@
             height: 50px;
             transition: all 0.5s;
             cursor: pointer;
-            margin: 5px;
+            margin: 5px auto;
             border-radius: 30px;
             }
 
-            .container button span {
+            .containers button span {
             cursor: pointer;
             display: inline-block;
             position: relative;
             transition: 0.5s;
             }
 
-            .container button span:after {
+            .containers button span:after {
             content: '\00bb';
             position: absolute;
             opacity: 0;
@@ -145,38 +140,18 @@
             transition: 0.5s;
             }
 
-            .container button:hover span {
+            .containers button:hover span {
             padding-right: 25px;
             color: black;
             
             }
 
-            .container button:hover span:after {
+            .containers button:hover span:after {
             opacity: 1;
             right: 0;
             }
-         
-            .footer{
-                background-color:rgb(51, 49, 49);
-                height: 60px;
-                text-align: center;
-                padding-top: 15px;
-                color:white;
-            }
-            .container1{
-                background-color:rgb(95, 95, 95);
-                color: white;
-            }
-            h6{
-                font-size: 20px;
-                color: black;
-            }
-            a{
-                text-align: center;
-            }
-            .container3 a{
-                color:white;
-            }
+          
+            
             .slide img{
                 width: 100%;
                 height: 500px;
@@ -189,6 +164,8 @@
                 box-shadow: 10px 15px 20px  rgb(24, 24, 24);
                 cursor: pointer;
                 overflow: hidden;
+                width: 100%;
+                height: 500px;
             }
             .slide h2{
                 margin: 0;
@@ -251,49 +228,72 @@
             -ms-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
         }
+        @media(max-width:964px){
+            .thumbnail img{
+            width:90%;
+            height: 500px;
+            transition:.4s;
+            background-size: cover;
+            background-position: center;
+            
+            
+        }
+       
+                
+            
+        }
         
     </style>
 </head>
 <body>
-    <div class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-               
-              
-              <a href="#" class="navbar-brand"><img src="img/logo.jpeg" style=" background-size: cover;height: 30px; background: transparent;padding-top: 0px; width:300px;"></a>
-              
-          </div>
-         
-              <ul class="nav navbar-nav navbar-right">
-                  <li><a href="landing page.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                  <li><a href="image gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a></li>
-                  <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Testimonials</a></li>
-                 
-                  <li><a href="about us.html"><i class="fa fa-bars" aria-hidden="true"></i> About</a></li>
-                  <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i> Contact </a></li>
-              </ul>
+     <!-- ======= Header ======= -->
+    <!-- Header -->
+  
+    <div class="header">
              
-          
-      </div>
-  </div>
+            
+        <nav id="logo"><a href="#" class="navbar-brand"><img src="img/logo.jpeg" style=" background-size: cover;height: 30px; background: transparent;padding-top: 0px; width:300px;"></a>
+        </nav>
+         <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+           <i class="fa fa-bars" ></i>
+        </label>
+     
+    
+         <ul class="menu">
+             <li><a href="home page.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+             <li><a href="image gallery.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a></li>
+             <li><a href="testimonial.html"><i class="fa fa-user" aria-hidden="true"></i> Testimonials</a></li>
+            
+             <li><a href="about us.html"><i class="fa fa-bars" aria-hidden="true"></i> About</a></li>
+             <li><a href="contact us.html"><i class="fa fa-envelope-open" aria-hidden="true"></i> Contact </a></li>
+             <label for="chk" class="hide-btn">
+               <i class="fa fa-times" ></i>
+             </label>
+           </ul>
+     </div>
+<!-- End Header -->
     <div class="album-sec">
-        <div class="container">
+        <div class="containers">
+            <div class="containerone">
             <div class="slide">
+
                 <img src="https://images.unsplash.com/photo-1526178613552-2b45c6c302f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
                 <div class="img-text">
                     <h2>MID-SEASON</h2>
                     <h1>SALE</h1>
                     <p>You Survived the week.<br>
                     Pamper yourself this weekend.<br>
-            </p>
+                    </p>
                     
                     <a href="#" class="shop-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOP NOW</a>
-            </div>
+                 </div>
 
             </div>
+        </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="header text-center">
+                    <div class="header1 text-center">
                        
                             <h1 style="font-size: 60px; padding-top: 20px; text-shadow: 0px 4px 3px white,
                             0px 8px 13px rgb(95, 94, 94);">WOMEN'S WEAR</h1>
@@ -369,7 +369,7 @@
             <button type="button" class="btn btn-default .btn-lg" style=" margin-left: 350px;"><span>View More</span></button>
           
             <div class="col-md-12">
-                <div class="header text-center">
+                <div class="header1 text-center">
                     <h1 style="font-size: 60px; padding-top: 20px; text-shadow: 0px 4px 3px white,
                     0px 8px 13px rgb(95, 94, 94);"> MEN'S WEAR</h1>
                 </div>
@@ -440,7 +440,7 @@
         </div> 
         <button type="button" class="btn btn-default .btn-lg" style=" margin-left: 350px;"><span>View More</span></button>
         <div class="col-md-12">
-            <div class="header text-center">
+            <div class="header1 text-center">
                 <h1 style="font-size: 60px; padding-top: 20px; text-shadow: 0px 4px 3px white,
                             0px 8px 13px rgb(95, 94, 94);">KID'S WEAR</h1>
             </div>
@@ -523,10 +523,10 @@
             <!-- Grid row -->
             <div class="row ">
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 column_1">
+            <div class="col-md-3 col-lg-4 col-xl-3 column_1 segment-one">
                 <!-- Content -->
                 <h6 class="text">ONLINE SHOPPING</h6>
-                <hr class="deep-purple " style="width: 150px;" >
+               
                 <p>
                     <a href="#">Men</a><br></p>
                    <p> <a href="#">Women</a><br></p>
@@ -536,36 +536,36 @@
                    
             </div>
             <!-- Grid column -->
-
+      
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto column_2">
+            <div class="col-md-2 col-lg-2 col-xl-2 column_2 mx-auto  segment-two">
                 <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Get Started</h6>
-                <hr class="hr " style="width: 100px;">
+                <h6 class="text">Get Started</h6>
+               
                 <p>
                 <a href="home page.html">Home</a>
                 </p>
                 <p>
-                <a href="aboutus.html">AboutUs</a>
+                <a href="about us.html">AboutUs</a>
                 </p>
                 <p>
-                <a href="#!">Contact</a>
+                <a href="contact us.html">Contact</a>
                 </p>
                 <p>
-                <a href="#!">Gallery</a>
+                <a href="image gallery.html">Gallery</a>
                 </p>
                 <p>
-                <a href="#!">Testimonials</a>
+                <a href="testimonial.html">Testimonials</a>
                 </p>
             </div>
             <!-- Grid column -->
-
+      
             <!-- Grid column -->
-            <div class="col-md-7 col-lg-4 col-xl-7 mx-auto ">
+            <div class="col-md-7 col-lg-4 col-xl-7 mx-auto segment-three ">
                 <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                <hr class="hr " style="width: 70px;">
+                
                 <!-- Links -->
-                <div class="social-links">    
+                <div class="social-links ">    
                     <a href="#"><i class="fa  fa-instagram fa-3x" aria-hidden="true"style="font-weight-bold=40px;"></i> </a>
                     <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i> </a>
                     <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i> </a>
@@ -574,21 +574,21 @@
                     
                 </div>
                 
-
+      
             </div>
             <!-- Grid column -->
             </div>
             <!-- Grid row -->
-
+      
         </div>
         <!-- Footer Links -->
-
+      
         <!-- Copyright -->
         <div class="footer">© 2020 Copyright:
             <a href="./index.html"> Fashion Fiesta</a>
         </div>
         <!-- Copyright -->
-    </footer>
-          
+      </footer>
+      
 </body>
 </html>

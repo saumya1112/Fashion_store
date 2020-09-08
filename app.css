@@ -21,17 +21,9 @@ hr{
     width: 700px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-.navbar {
-    background-color:rgba(192, 185, 185, 0.781);
-    border: none;
-    color: black;
     
 }
-.nav{
-    
-    font-size: large;
-}
+
 button{
     border-radius: 15px;
     border: none;
